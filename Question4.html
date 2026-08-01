@@ -1,0 +1,31 @@
+import random
+
+class Quiz:
+
+    questions=[]
+
+    def __init__(self):
+        score=0
+
+    def add_question(self,question,answer):
+        self.questions.append(question,answer)
+
+    def play(self):
+
+        random.shuffle(question)
+
+        for q,a in self.questions:
+
+            ans=input(q)
+
+            if ans.lower==a.lower():
+                score+=1
+
+        print("Score",score)
+
+quiz=Quiz()
+
+quiz.add_question("Capital of India?","Delhi")
+quiz.add_question("2+2?","4")
+
+quiz.play()
