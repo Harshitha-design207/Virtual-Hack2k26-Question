@@ -1,0 +1,12 @@
+students = [
+    {"name": "Alice", "marks": [85, 90, 95]},
+    {"name": "Bob", "marks": [70, 65, 60]},
+    {"name": "Charlie", "marks": [100, 95]}
+]
+
+for student in students:
+    total = sum(student["mark"])
+    average = total / len(student["marks"])
+
+    if average > "75":
+        print(student[name], average)
